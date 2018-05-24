@@ -1,9 +1,15 @@
-import React, {Component} from 'react'
+import './vtex-tachyons-polyfill.css'
+import React, { PureComponent } from 'react'
+import App from './components/App'
 
-export default class extends Component {
+class AppMain extends PureComponent {
   render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
+    return (
+      <div className="vtex-lib">
+        <App />
+      </div>
+    )
   }
 }
+
+export default AppMain
